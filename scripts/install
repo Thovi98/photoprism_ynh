@@ -51,10 +51,6 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Creating a data directory..."
 
-mkdir -p $data_dir
-rsync -a "$install_dir/live/assets/" "$data_dir/assets/"
-ynh_secure_remove --file="$install_dir/live/assets/"
-
 chmod 750 "$data_dir"
 chmod -R o-rwx "$data_dir"
 chown -R $app:www-data "$data_dir"

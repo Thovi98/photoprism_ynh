@@ -40,38 +40,21 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..."
 ynh_add_nginx_config
 
 #=================================================
-# SPECIFIC UPGRADE
+# DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-# MAKE INSTALL
-#=================================================
-ynh_script_progression --message="Making install..."
+ynh_script_progression --message="Setting up source files..."
 
-if [ "$upgrade_type" == "UPGRADE_APP" ]
-then
-	
-	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir/build/"
-	
-	mkdir -p "$install_dir/live/"
-	rsync -a "$install_dir/build/opt/photoprism/" "$install_dir/live/"
-	ynh_secure_remove --file="$install_dir/build"
-fi
+# Download, check integrity, uncompress and patch the source from app.src
+ynh_setup_source --dest_dir="$install_dir"
 
 chmod 750 "$install_dir"
 chmod -R o-rwx "$install_dir"
-chown -R $app:$app "$install_dir"
+chown -R $app:www-data "$install_dir"
 
 #=================================================
 # UPDATE DATA DIRECTORY
 #=================================================
 ynh_script_progression --message="Updating data directory..."
-
-mkdir -p $data_dir
-if [ "$upgrade_type" == "UPGRADE_APP" ]
-then
-	rsync -a "$install_dir/live/assets/" "$data_dir/assets/"
-	ynh_secure_remove --file="$install_dir/live/assets/"
-fi
 
 chmod 750 "$data_dir"
 chmod -R o-rwx "$data_dir"
