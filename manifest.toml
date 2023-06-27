@@ -1,5 +1,4 @@
 packaging_format = 2
-
 id = "photoprism"
 name = "Photoprism"
 description.en = "AI-Powered Photos App for the Decentralized Web"
@@ -57,13 +56,10 @@ ram.runtime = "50M"
 [resources]
     [resources.sources]
         [resources.sources.main]
-        format = "docker"
-        extract = true
-        prefetch = false
-
-        amd64.url = "photoprism/photoprism:220901-bullseye"
+        
+        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230625-17242fb07/photoprism.tar.gz"
         amd64.platform = "linux/amd64"
-        amd64.sha256 = "3381d40181ecdf62932e9530c6b81e6e0f8828a3d373d8dedf662aab96dafba4"
+        amd64.sha256 = ""
         
         arm64.url = "photoprism/photoprism:220901-bullseye"
         arm64.platform = "linux/arm64"
