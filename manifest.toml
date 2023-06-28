@@ -33,7 +33,7 @@ ram.runtime = "50M"
 
     [install.path]
     type = "path"
-    default = "/example"
+    default = "/"
 
     [install.init_main_permission]
     help.en = "If enabled, Photoprism will be accessible by mobile apps and by users without a YunoHost account. This can be changed later in the webadmin."
@@ -67,7 +67,6 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
-    main.auth_header = false
 
     sharing.url = "/s"
     sharing.allowd = "visitors"
