@@ -67,14 +67,13 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+    main.auth_header = false
 
     sharing.url = "/s"
     sharing.allowd = "visitors"
     sharing.show_tile = false
     sharing.protected = true
 
-    login.url = "/library/login"
-    login.auth_header = false
 
     [resources.ports]
     main.default = 8095
