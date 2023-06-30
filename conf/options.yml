@@ -1,10 +1,10 @@
 Debug: false
 DarktableBin: /usr/bin/darktable-cli
-AssetsPath: /home/yunohost.app/__APP__/assets
-CachePath: /home/yunohost.app/__APP__/cache
-OriginalsPath: /home/yunohost.app/__APP__/photos/originals
-ImportPath: /home/yunohost.app/__APP__/photos/import
-TempPath: /home/yunohost.app/__APP__/temp
+AssetsPath: __INSTALL_DIR__/assets
+CachePath: __DATA_DIR__/cache
+OriginalsPath: __DATA_DIR__/photos/originals
+ImportPath: __DATA_DIR__/photos/import
+TempPath: __DATA_DIR__/temp
 SiteUrl: https://__DOMAIN____PATH__
 AdminPassword: __PASSWORD__
 HttpServerHost: 127.0.0.1
@@ -13,8 +13,8 @@ HttpPort: __PORT__
 HttpPassword:
 DatabaseDriver: MySQL
 DatabaseServer: 127.0.0.1
-DatabaseName: photoprism
-DatabaseUser: photoprism
+DatabaseName: __APP__
+DatabaseUser: __APP__
 DatabasePassword: __DB_PWD__
 Theme: lavendel
 Language: __LANGUAGE_KEY__

@@ -41,8 +41,10 @@ ram.runtime = "50M"
     type = "group"
     default = "visitors"
 
-    [install.admin]
-    type = "user"
+    [install.password]
+    help.en = "Photoprism currently supports only one user : admin. Choose a password here."
+    help.fr = "Photoprism ne permet qu'un seul utilisateur pour le moment. Choisissez un mot de passe ici."
+    type = "password"
 
     [install.language]
     ask.en = "Choose the application language"
@@ -55,7 +57,7 @@ ram.runtime = "50M"
     [resources.sources]
         [resources.sources.main]
         
-        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230625-17242fb07/photoprism.tar.gz"
+        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230615-90a18f6e7/photoprism.tar.gz"
         amd64.platform = "linux/amd64"
         amd64.sha256 = "b8043dda3ca0f2fede2605ac1bad07acc2a77f1e80eb3e75bffba982766fd100"
  
