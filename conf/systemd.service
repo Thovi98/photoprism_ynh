@@ -15,7 +15,7 @@ TemporaryFileSystem=/:ro
 
 BindReadOnlyPaths=-/lib/ -/lib64/ -/usr/lib/ -/usr/lib64/ -/etc/ld.so.cache -/etc/ld.so.conf -/etc/ld.so.conf.d/ -/etc/bindresvport.blacklist -/usr/share/zoneinfo/ -/usr/share/locale/ -/etc/localtime -/usr/share/common-licenses/ -/etc/ssl/certs/ -/etc/alternatives/
 BindReadOnlyPaths=-/dev/log -/run/systemd/journal/socket -/run/systemd/journal/stdout -/run/systemd/notify
-BindPaths=__INSTALL_DIR__ __INSTALL_DIR__bin __DATA_DIR__/ -/usr -/etc -/var -/home -/dev -/etc -/media -/mnt -/opt -/proc -/run -/srv -/sys -/tmp
+BindPaths=__INSTALL_DIR__ __INSTALL_DIR__/bin __DATA_DIR__/ -/usr -/etc -/var -/home -/dev -/etc -/media -/mnt -/opt -/proc -/run -/srv -/sys -/tmp
 
 EnvironmentFile=__INSTALL_DIR__/.env
 WorkingDirectory=__INSTALL_DIR__/bin
