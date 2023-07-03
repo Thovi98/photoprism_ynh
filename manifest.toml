@@ -77,7 +77,7 @@ ram.runtime = "50M"
 
 
     [resources.ports]
-    main.default = 8095
+    main.default = 2342
 
     [resources.apt]
     packages = "ffmpeg, libimage-exiftool-perl, mariadb-server, darktable"
