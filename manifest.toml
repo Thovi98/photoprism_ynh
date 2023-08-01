@@ -4,7 +4,7 @@ name = "Photoprism"
 description.en = "AI-Powered Photos App for the Decentralized Web"
 description.fr = "Gestion de photos en ligne"
 
-version = "2023.06.25~ynh1"
+version = "2023.07.19~ynh1"
 
 maintainers = ["Thovi98"]
 
@@ -18,7 +18,7 @@ code = "https://github.com/photoprism/photoprism"
 fund = "https://www.photoprism.app/membership"
 
 [integration]
-yunohost = ">= 11.1.15"
+yunohost = ">= 11.2.0"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 ldap = true
@@ -57,9 +57,8 @@ ram.runtime = "50M"
     [resources.sources]
         [resources.sources.main]
         
-        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230625-17242fb07/photoprism.tar.gz"
-        amd64.platform = "linux/amd64"
-        amd64.sha256 = "b8043dda3ca0f2fede2605ac1bad07acc2a77f1e80eb3e75bffba982766fd100"
+        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230719-73fa7bbe8/photoprism.tar.gz"
+        amd64.sha256 = "88200d98443cc5cb07de20253b70156e16433ed588499435e4ac4c8cf03923e9"
  
     [resources.system_user]
 
