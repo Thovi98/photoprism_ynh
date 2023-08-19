@@ -68,6 +68,7 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+    main.auth_header = false
 
     sharing.url = "/s"
     sharing.allowd = "visitors"
