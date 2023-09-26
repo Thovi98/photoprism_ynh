@@ -56,9 +56,8 @@ ram.runtime = "50M"
 [resources]
     [resources.sources]
         [resources.sources.main]
-        
-        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230719-73fa7bbe8/photoprism.tar.gz"
-        amd64.sha256 = "88200d98443cc5cb07de20253b70156e16433ed588499435e4ac4c8cf03923e9"
+        amd64.url = "https://github.com/IndrekHaav/photoprism-builds/releases/download/230923-e59851350/photoprism.tar.gz"
+        amd64.sha256 = "cdb4a8cc6b6d8ff765b24ec31ff07fcb37b0f6ed0ac4bae4bdfe15acc0d4915a"
  
     [resources.system_user]
 
